@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	double price, used_liters, late_pay, late_price, water_pricing, gallon;
+	price = 35;
+	
+	late_price = 20;
+	
+	cout << " how many gallons of water did you use?  ";cin >> gallon; 
+	cout << " how much is your unpaid balance if you have last month: ";cin>> late_pay;
+	
+	
+	if (late_pay >0)
+	{
+		used_liters = gallon * 1.10;
+		water_pricing = price + used_liters + late_price+ late_pay;
+		cout << " Your water bill is: P\n " << water_pricing <<endl;
+	}
+	
+	else 
+	{
+		used_liters = gallon * 1.10;
+		water_pricing = price + used_liters; 
+		cout << "your water bill is : P\n" <<water_pricing<< endl;
+		
+	}
+_getch();
+return 0;
+}
