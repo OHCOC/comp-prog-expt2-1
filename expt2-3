@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	int Xa, Ya, va, e;
+	const z = 2.5;
+	cout << "V=xyz when x=1 and 1<y<5 \n";
+	cout << "V=x+y/z when x=1 y=>5 \n";
+	cout << "V=|(x-y)/z| when x=2 y=>5 \n";
+	cout << "V=x-sqrt(y+z) when x=2 y<=5 \n";
+	cout << "V=x+y+z other values of x and y \n";
+	cout << " Enter codes for x and y to get V \n";
+	cout << " enter x \n ";
+	cin >>Xa;
+	cout << " enter y \n";
+	cin >>Ya;
+	if (Xa==1 && Ya>1 && Ya<5)
+	{
+		va=(Xa*Ya*z);
+		cout<<"V is: " <<va<< endl;
+	}
+	else if (Xa==1 && Ya>=5) 
+	{
+		va= abs(Xa+Ya/z) ;
+		cout<<"V is: " <<va<< endl;
+	}
+	else if (Xa==2 && Ya<=5)
+	{
+		va=(Xa-sqrt(Ya+z));   
+		cout<<"V is: " <<va<< endl;
+	}	   
+	else (Xa==e && Ya ==e);
+	{
+		va= Xa + Ya + z ;
+		cout<<"V is: " << va << endl;
+	}
+	cin.get();
+}
