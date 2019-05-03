@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int x;
+	int Multiplication= 10;
+	
+	cout << "Enter what number of Multiplication table do you want? \n";
+	cin >> x;
+	cout << "The Mulitplication Table of " << x; 
+	cout << endl;
+	for (int row =1; row <= Multiplication; ++row)
+	{
+		int ans = x * row;
+		cout << row << " X " << x << " = " <<ans;
+		cout << endl;
+	}
+	return 0;
+}
