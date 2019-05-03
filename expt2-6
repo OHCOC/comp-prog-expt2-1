@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+	int X= 22, B1= 0, B2= 1, nextNumber= 0;
+	
+	cout << "Fibonacci Series: ";
+	
+	for (int N= 1; N <= X; ++N) 
+	{
+	
+		if (N==1)
+		{
+			cout << " " <<B1 << ",";
+			continue;
+		}
+		else if (N==2)
+		{
+			cout <<B2 << ",";
+			continue;
+		}
+		nextNumber= B1 +B2;
+		B1 =B2;
+		B2 =nextNumber;
+	
+		cout << nextNumber << ",";
+	}
+	cin.get();
+}
