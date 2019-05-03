@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	float v1, v2, v3;
+	
+	cout <<" Place the first number: \n";
+	cin >> v1;
+	cout <<" Place the second number: \n";
+	cin >> v2;
+	cout <<" Place the third number: \n"; 
+	cin >> v3;
+	
+	if (v1 >= v2 && v1>=v3)
+	{
+		cout <<" The number that is the largest is: \n" <<v1;
+	}
+	else if (v2>=v1 && v2>=v3)
+	{
+		cout <<" The number that is the largest is: \n" <<v2;
+	}
+	else (v3>=v1 && v3>= v2);
+	{
+		cout <<" The number that is the largest is: \n" <<v3;
+	}
+}
